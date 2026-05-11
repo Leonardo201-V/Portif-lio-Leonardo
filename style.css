@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Reset e Fonte - Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0000ff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4444ff;
+}
+
+/* Cabeçalho - Superior */
+nav {
+    width: 100%;
+    height: 10vh;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #0000ff;
+    text-shadow: 0 0 10px #0000ff;
+}
+
+/* Menu de navegação */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    padding: 8px 0;
+}
+
+.nav-links a:hover {
+    color: #0000ff;
+}
+
+.nav-links .active {
+    color: #0000ff;
+    border-bottom: 2px solid #0000ff;
+}
+
+/* Seção Inicial */
+.Inicial {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    gap: 3rem;
+}
+
+.Inicial-Img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Inicial-Img img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px #0000ff;
+    transition: 0.3s ease;
+}
+
+.Inicial-Img:hover img {
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.Inicial-Cont {
+    flex: 1;
+    color: white;
+}
+
+.Inicial-Cont h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.Inicial-Cont h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.Inicial-Cont h3 span {
+    color: #0000ff;
+}
+
+.Inicial-Cont p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
+/* Redes Sociais */
+.rede-social {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.rede-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #0000ff;
+    border-radius: 50%;
+    color: #0000ff;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.rede-social a:hover {
+    scale: 1.1;
+    background-color: #0000ff;
+    color: black;
+    box-shadow: 0 0 15px #0000ff;
+    transform: translateY(-3px);
+}
+
+/* Sobre Mim */
+.sobre {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.sobre-Cont {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+.esquerda {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.esquerda img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #0000ff;
+    object-fit: cover;
+}
+
+.direita {
+    flex: 1;
+}
+
+.sobre-tit span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0000ff;
+    border-bottom: 3px solid #0000ff;
+    padding-bottom: 8px;
+}
+
+.sobre-Texto {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: white;
+}
+
+.direita p {
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    text-align: justify;
+}
+
+.Botao-CV a {
+    display: inline-block;
+    outline: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: transparent;
+    color: white;
+    border: 2px solid #0000ff;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.Botao-CV a:hover {
+    background-color: #0000ff;
+    color: black;
+    box-shadow: 0 0 15px #0000ff;
+}
+
+/* Formação */
+.Formacao {
+    background-color: #000000;
+    padding: 5rem 8%;
+}
+
+.Formacao-Cont {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Formacao-Tit {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0000ff;
+    border-bottom: 3px solid #0000ff;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 2rem;
+}
+
+.Formacao-det {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.Formacao-ST {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.Formacao-texto p {
+    color: #cccccc;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Blocos - formação */
+.Formacao-Cont:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.Caixa-Form {
+    flex: 1 1 calc(33.33% - 2rem);
+    min-width: 250px;
+    margin: 0;
+}
+
+.Caixa-F {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #0000ff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: 0.3s ease;
+    text-align: left;
+    height: 100%;
+}
+
+.Caixa-F:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.3);
+    background: rgba(0, 0, 255, 0.1);
+}
+
+.Curso {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0000ff;
+    margin-bottom: 0.5rem;
+}
+
+.Instituição {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.Status {
+    display: inline-block;
+    background-color: #0000ff;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 0.5rem 0;
+}
+
+.Periodo-Ini,
+.Periodo-Fim {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.Formacao-resumo {
+    margin-top: 1rem;
+}
+
+.Formacao-resumo p {
+    color: #cccccc;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Capacidades */
+.Capacidades {
+    background-color: #000000;
+    padding: 5rem 8%;
+}
+
+.Capacidades-Cont {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Capacidade-Tit span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0000ff;
+    border-bottom: 3px solid #0000ff;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 2rem;
+}
+
+.Capacidade-ST {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.Capacidade-Texto p {
+    color: #cccccc;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+/* Container - Lista*/
+.habilidades-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.habilidade-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.2);
+}
+
+/* Marcador habilidades */
+.habilidade-nome {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.habilidade-nome::before {
+    content: "●";
+    color: #0000ff;
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
+}
+
+.habilidade-porcentagem {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0000ff;
+}
+
+/* Portifólio */
+.Portfolio {
+    background: #000000;
+    padding: 5rem 6%;
+}
+
+.Portfolio-Cont {
+    text-align: center;
+}
+
+.Portfolio-Tit {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0000ff;
+    display: inline-block;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.Portfolio-Tit::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    background: #0000ff;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* Grid - Projetos */
+.projetos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Cards */
+.Projeto {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 24px;
+    padding: 2rem 1.5rem;
+    transition: all 0.4s ease;
+    text-align: left;
+    cursor: pointer;
+}
+
+.Projeto:hover {
+    background: rgba(0, 0, 255, 0.08);
+    transform: translateY(-8px);
+}
+
+.Projeto-Nome {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0000ff;
+    margin-bottom: 0.75rem;
+}
+
+.Projeto-Desc {
+    font-size: 0.9rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.Projeto-Tec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.Projeto-Tec span {
+    background: transparent;
+    border: 1px solid rgba(0, 0, 255, 0.4);
+    color: #8888ff;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+.Projeto-Tec span:hover {
+    border-color: #0000ff;
+    color: #0000ff;
+}
+
+.Projeto a {
+    display: inline-block;
+    background: transparent;
+    border: 1.5px solid #0000ff;
+    color: #0000ff;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.Projeto a:hover {
+    background: #0000ff;
+    color: #000000;
+    box-shadow: 0 0 12px rgba(0, 0, 255, 0.4);
+}
+
+/* Contato */
+.Contato {
+    background-color: #000000;
+    padding: 5rem 8%;
+}
+
+.Contato-Cont {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.Contato-Tit {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0000ff;
+    border-bottom: 3px solid #0000ff;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: auto;
+}
+
+/* Formulário */
+form {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid rgba(0, 0, 255, 0.3);
+    border-radius: 12px;
+    color: white;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #0000ff;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.2);
+    background: rgba(0, 0, 255, 0.05);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #666666;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #0000ff;
+    color: #0000ff;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+form button:hover {
+    background: #0000ff;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* WhatsApp */
+.Contato-Cont > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background: rgba(0, 0, 255, 0.1);
+    border: 1.5px solid #0000ff;
+    color: #0000ff;
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.Contato-Cont > a:hover {
+    background: #0000ff;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.4);
+    transform: translateY(-2px);
+    gap: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #000000;
+    border-top: 1px solid #0000ff;
+    margin-top: 2rem;
+}
+
+.Texto-Footer span {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.Texto-Footer a {
+    color: #0000ff;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media screen and (min-width: 1600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Inicial, .sobre, .Formacao, .Capacidades, .Portfolio, .Contato {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    .Inicial-Img img { max-width: 450px; }
+    .Inicial-Cont p, .direita p { max-width: 700px; }
+    .cabecalho { max-width: 1400px; margin: 0 auto; }
+}
+
+@media screen and (min-width: 2000px) {
+    .Inicial, .sobre, .Formacao, .Capacidades, .Portfolio, .Contato { max-width: 1600px; }
+    .Inicial-Cont p, .direita p { max-width: 800px; }
+    .Inicial-Img img { max-width: 500px; }
+}
+
+@media screen and (max-width: 1024px) {
+    .Inicial { flex-direction: column; text-align: center; padding: 4rem 5%; }
+    .sobre-Cont { flex-direction: column; text-align: center; }
+    .Inicial-Img img { max-width: 280px; }
+    .esquerda img { max-width: 250px; }
+    .rede-social { justify-content: center; }
+    .Caixa-Form { flex: 1 1 calc(50% - 2rem); }
+    .Formacao { padding: 4rem 5%; }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho { flex-direction: column; padding: 1rem; gap: 1rem; }
+    .nav-links { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    .nav-links a { font-size: 0.9rem; }
+    .Inicial { padding: 2rem 5%; gap: 2rem; }
+    .Inicial-Cont h1 { font-size: 2rem; }
+    .Inicial-Cont h3 { font-size: 1.2rem; }
+    .Inicial-Cont p { font-size: 0.9rem; }
+    .sobre { padding: 2rem 5%; }
+    .sobre-Cont { flex-direction: column; gap: 2rem; }
+    .sobre-tit span { font-size: 1.5rem; }
+    .sobre-Texto { font-size: 1.2rem; }
+    .Botao-CV button { padding: 8px 20px; font-size: 0.9rem; }
+    .rede-social a { font-size: 1.4rem; width: 2.5rem; height: 2.5rem; }
+    .Formacao { padding: 3rem 5%; }
+    .Formacao-Tit { font-size: 2rem; }
+    .Formacao-ST { font-size: 1.4rem; }
+    .Caixa-Form { flex: 1 1 100%; }
+    .Curso { font-size: 1.1rem; }
+}
+
+@media screen and (max-width: 480px) {
+    .Inicial-Img img { max-width: 200px; }
+    .esquerda img { max-width: 180px; }
+    .logo { font-size: 1.5rem; }
+    .Inicial-Cont h1 { font-size: 1.5rem; }
+    .sobre-tit span { font-size: 1.2rem; }
+    .Formacao-Tit { font-size: 1.5rem; }
+}
